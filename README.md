@@ -1,23 +1,35 @@
 # Kirov Scanner
 
-Multi-vector security reconnaissance and vulnerability scanning platform with real-time threat analysis and reporting.
+Multi-vector security reconnaissance and vulnerability scanning platform with real-time threat analysis, MITRE ATT&CK mapping, and automated reporting.
 
-## Features
+Built with Next.js and TypeScript. Part of the Kirov Security Labs ecosystem.
 
-- Automated network scanning and reconnaissance
-- Real-time vulnerability detection and classification
-- MITRE ATT&CK framework mapping
-- Comprehensive reporting with severity scoring
-- Multi-protocol support (HTTP, DNS, SSL/TLS, ports)
+## Capabilities
 
-## Tech Stack
+| Capability | Description |
+|-----------|-------------|
+| Network Scanning | Automated reconnaissance across subnets and services |
+| Vulnerability Detection | Real-time CVE matching and severity classification |
+| MITRE ATT&CK Mapping | Maps findings to adversary techniques and tactics |
+| Multi-Protocol | HTTP, DNS, SSL/TLS, port scanning, service fingerprinting |
+| Reporting | PDF and HTML reports with severity scoring and remediation |
 
-- **Framework**: Next.js (TypeScript)
-- **Styling**: Tailwind CSS
-- **Security**: Custom detection engine with heuristic analysis
-- **Deployment**: Vercel / Docker
+## Architecture
 
-## Getting Started
+```
+User / API
+    
+Kirov Scanner (Next.js + TypeScript)
+    
++-- Scan Engine (network, web, DNS, SSL)
++-- Detection Engine (CVE matching, signature-based)
++-- Mapping Engine (MITRE ATT&CK)
++-- Report Engine (PDF, HTML, JSON)
+    
+Output: Findings + Severity + Remediation
+```
+
+## Quick Start
 
 ```bash
 git clone https://github.com/Raphasha27/kirov-scanner.git
@@ -26,23 +38,31 @@ npm install
 npm run dev
 ```
 
-## Deployment
+## Use Cases
 
-The recommended deployment option is **Vercel** (free tier) or **Docker** for self-hosted environments.
+- **Security Audits**: Pre-deployment vulnerability assessment
+- **Continuous Monitoring**: Scheduled scans for regression detection
+- **Compliance**: Mapping findings to compliance frameworks (PCI-DSS, HIPAA, POPIA)
+- **Incident Response**: Rapid reconnaissance during active incidents
 
-<br/>
+## Related
+
+| Project | Description |
+|---------|-------------|
+| [Kirov Security Core](https://github.com/Raphasha27/kirov-security-core) | Unified security dashboard |
+| [Kirov Threat SDK](https://github.com/Raphasha27/kirov-threat-sdk) | Threat intelligence with MITRE ATT&CK |
+| [Github-Harden2](https://github.com/Raphasha27/Github-Harden2) | Repository hardening automation |
+
 ## Product Ladder
 
 ```
 GitHub (this repo)
-    ↓
-Portfolio → https://raphasha27.github.io/raphasha-dev-portfolio
-    ↓
-Case Study → (coming soon)
-    ↓
-Live Demo → https://github.com/Raphasha27/kirov-scanner
-    ↓
-Contact → https://github.com/Raphasha27
+    
+Portfolio  https://raphasha27.github.io/raphasha-dev-portfolio
+    
+Live Demo  https://github.com/Raphasha27/kirov-scanner
+    
+Contact  https://github.com/Raphasha27
 ```
 
 Part of the [Kirov Dynamics](https://github.com/Raphasha27/kirov-dynamics) ecosystem.
