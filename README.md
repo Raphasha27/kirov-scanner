@@ -30,6 +30,14 @@ npm run dev
 
 The recommended deployment option is **Vercel** (free tier) or **Docker** for self-hosted environments.
 
+<br/>
+
+---
+
+<p align="center">
+  <sub>🔒 <a href="https://github.com/Raphasha27">Raphasha27</a> Security Ecosystem — <a href="https://github.com/Raphasha27/Raphasha27">Back to Profile</a></sub>
+</p>
+
 ## License
 
 MIT
