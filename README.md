@@ -14,20 +14,19 @@ Built with Next.js and TypeScript. Part of the Kirov Security Labs ecosystem.
 | Multi-Protocol | HTTP, DNS, SSL/TLS, port scanning, service fingerprinting |
 | Reporting | PDF and HTML reports with severity scoring and remediation |
 
+
 ## Architecture
 
+```mermaid
+graph LR
+    USER[User] --> API[FastAPI]
+    API --> PROC[Processor]
+    PROC --> DB[(Database)]
+    API --> AUTH[Auth Layer]
+    PROC --> AI[AI/ML Engine]
 ```
-User / API
-    
-Kirov Scanner (Next.js + TypeScript)
-    
-+-- Scan Engine (network, web, DNS, SSL)
-+-- Detection Engine (CVE matching, signature-based)
-+-- Mapping Engine (MITRE ATT&CK)
-+-- Report Engine (PDF, HTML, JSON)
-    
-Output: Findings + Severity + Remediation
-```
+
+Microservices-based architecture with API Gateway, authentication layer, PostgreSQL persistence, and event-driven communication.
 
 ## Quick Start
 
